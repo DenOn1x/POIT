@@ -1,0 +1,116 @@
+.navbar
+  width: 100%
+  padding: 10px 90px 10px 360px
+  position: relative
+  background: #3188AA
+
+  &__logo
+    height: 180px
+    position: absolute
+    top: 0
+    left: 90px
+
+    &_img
+      height: 100%
+
+  &__content
+    display: flex
+    justify-content: space-evenly
+
+  &__links
+    display: flex
+
+  &__link
+    padding: 13px 10px
+    border-left: 1px solid #A2E5FF
+
+    &:last-child
+      border-right: 1px solid #A2E5FF
+
+    &_a
+      color: #fff
+      font-weight: 500
+      text-transform: uppercase
+      font-size: 14px
+      line-height: 100%
+
+  &__buttons
+    display: grid
+    grid-auto-flow: column
+    grid-column-gap: 16px
+    align-items: center
+
+  &__button
+    padding: 11px 12px
+    font-weight: 500
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 100%
+    box-shadow: inset -2px -2px 0px rgba(0, 0, 0, 0.25)
+    cursor: pointer
+    border-radius: 5px
+    border: none
+
+  &__auth
+    background: #B3D6E1
+
+  &__exit
+    background: #B3D6E1
+    padding: 10px 16px
+    margin-left: 20px
+
+  &__cart
+    cursor: pointer
+    color: #B3D6E1
+
+  &__reg
+    background: #00B3DD
+    color: #fff
+
+  &__user
+    display: flex
+    align-items: center
+
+  &__burger
+    height: 20px
+    display: flex
+    align-items: center
+    cursor: pointer
+
+    &_item, &_item:after, &_item:before
+      width: 30px
+      height: 4px
+      border-radius: 5px
+      background: #434343
+
+    &_item
+      position: relative
+
+      &:after, &:before
+        content: ''
+        position: absolute
+
+      &:after
+        top: -8px
+
+      &:before
+        bottom: -8px
+
+
+@media screen and (max-width: 1024px)
+  .navbar
+    padding: 10px 20px 10px 200px
+
+    &__logo
+      left: 0
+
+@media screen and (max-width: 768px)
+  .navbar
+    padding: 10px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__logo
+      position: static
+      height: 50px
